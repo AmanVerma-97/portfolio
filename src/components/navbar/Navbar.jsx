@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import Resume from "../../assets/Resume.pdf";
+import { NavLink } from 'react-router-dom';
 
 const Links= [
-    {link:"#", title:"About"},
-    {link:"#", title:"Education"},
-    {link:"#", title:"Internships"},
-    {link:"#", title:"Projects"},
-    {link:"#", title:"Contact"},
+    {url:"/", title:"About"},
+    {url:"/education", title:"Education"},
+    {url:"/internships", title:"Internships"},
+    {url:"/projects", title:"Projects"},
+    {url:"/contact", title:"Contact"},
 ]
 
 function Navbar() {
 
   const [toggle, setToggle]=useState(true);
-  const pdfPath= "https://github.com/AmanVerma-97/portfolio/blob/master/src/assets/Resume.pdf";
 
   function handleToggle(){
     setToggle(!toggle);
@@ -20,18 +21,14 @@ function Navbar() {
   }
 
   function downloadResume(){
-    
-    const anchor= document.createElement('a');
-    anchor.href= pdfPath;
-    anchor.download= 'Aman_Resume.pdf';
-    anchor.click();
+    window.open(Resume);
   }
 
   return (
     <nav className="w-screen bg-black text-white min-h-20 py-4 px-8 flex justify-between items-center sticky">
         {/* Resume Download Button */}
         <div className=""> 
-            <button className="text-lg border-2 border-yellow-700 bg-orange-300 text-black p-2 rounded-md hover:bg-yellow-400" onClick={downloadResume}>Download Resume</button>
+            <button className="text-lg border-2 border-yellow-700 bg-orange-300 text-black p-2 rounded-md hover:bg-yellow-400" onClick={downloadResume}>My Resume</button>
         </div>
 
         {/* Landing Pages */}
@@ -41,7 +38,7 @@ function Navbar() {
 
                 { Links.map((link,index)=>(
                     <li key={index} className="hover:text-red-300 md:hover:text-orange-300 cursor-pointer font-medium lg:text-2xl md:text-lg transition duration-500"> 
-                        {link.title} 
+                        <NavLink to={link.url}> {link.title} </NavLink>
                     </li>
                 ))}
 

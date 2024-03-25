@@ -2,7 +2,10 @@ import React from 'react'
 
 function Internships() {
   return (
-    <div>Internships</div>
+    <>
+      <h2 className="text-red-600 font-semibold text-center text-4xl"> internships </h2>
+    </>
+    
   )
 }
 
