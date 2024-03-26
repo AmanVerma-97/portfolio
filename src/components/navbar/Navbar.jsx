@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Resume from "../../assets/Resume.pdf";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 const Links= [
     {url:"/", title:"About"},
@@ -25,7 +25,8 @@ function Navbar() {
   }
 
   return (
-    <nav className="w-screen bg-black text-white min-h-20 py-4 px-8 flex justify-between items-center sticky">
+    <>
+    <nav className="w-screen bg-black text-white min-h-20 py-4 px-8 flex justify-between items-center sticky z-50">
         {/* Resume Download Button */}
         <div className=""> 
             <button className="text-lg border-2 border-yellow-700 bg-orange-300 text-black p-2 rounded-md hover:bg-yellow-400" onClick={downloadResume}>My Resume</button>
@@ -37,8 +38,8 @@ function Navbar() {
                             md:flex-row md:gap-8 md:relative md:top-0 lg:gap-12">
 
                 { Links.map((link,index)=>(
-                    <li key={index} className="hover:text-red-300 md:hover:text-orange-300 cursor-pointer font-medium lg:text-2xl md:text-lg transition duration-500"> 
-                        <NavLink to={link.url}> {link.title} </NavLink>
+                    <li key={index} className="hover:text-red-300 md:hover:text-orange-300 cursor-pointer font-medium lg:text-2xl md:text-lg transition duration-500 "> 
+                        <NavLink to={link.url} className="active:text-blue-400" onClick={handleToggle}> {link.title} </NavLink>
                     </li>
                 ))}
 
@@ -54,8 +55,10 @@ function Navbar() {
                  
             </button>
         </div>
-
-    </nav>
+    </nav> 
+    {/* To display children componenets */}
+    <Outlet/>
+    </>
   )
 }
 
