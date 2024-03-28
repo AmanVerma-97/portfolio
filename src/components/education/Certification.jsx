@@ -13,7 +13,7 @@ function Certification() {
         {
             education.map((edu, index)=>{
                 return(
-                    <div key={index}>
+                    <div key={index} className='p-2'>
                         <h2 className=' text-2xl lg:text-3xl font-extrabold text-blue-950 drop-shadow-xl'>{edu.name}
                         <img src={edu.url} alt={edu.name} className=' h-8 w-8 lg:inline rounded-full lg:ml-4 shadow-lg shadow-blue-950'/></h2>
                         <h3 className=' text-xl lg:2xl font-bold text-orange-800 drop-shadow-lg'>{edu.institute}</h3>
