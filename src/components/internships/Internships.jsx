@@ -12,11 +12,11 @@ const internships=[
 function Internships() {
   return (
     <>
-      <div className='border-2 border-green-600 w-11/12 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center justify-center lg:justify-between p-2 m-auto'>
+      <div className='w-11/12 lg:w-9/12 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-20 items-center justify-center lg:justify-between p-2 m-auto'>
           {
             internships.map((prog, index)=>{
               return(
-                <div key={index} className=' border-2 border-red-400 p-2 lg:h-64 h-auto'>
+                <div key={index} className=' p-2 lg:h-64 h-auto'>
                   <h2 className='text-2xl lg:text-3xl font-extrabold text-blue-950 drop-shadow-xl'>{prog.name} </h2>
                   <h3 className=' text-xl lg:2xl font-bold text-orange-800 drop-shadow-lg'>{prog.place}
                   <img src={prog.url} alt={prog.place} className=' h-8 w-8 lg:inline rounded-full lg:ml-2 shadow-lg shadow-blue-950' /> </h3>

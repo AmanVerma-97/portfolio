@@ -5,12 +5,24 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+      // ... other font families
+      extend: {
+        fontFamily: {
+          customFont: ['Nunito', 'sans-serif'],
+        },
+      },
+    },
+
     extend: {
-      
+      backgroundImage: {
+        'contact': "url('src/assets/contact.jpg')",
+        'error': "url('src/assets/error.jpeg')",
+      }
     },
   },
   plugins: [
     require("tailwindcss-animatecss"),
   ],
 }
-

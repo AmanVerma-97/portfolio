@@ -4,7 +4,7 @@ const socials=[
     {src:"https://cdn-icons-png.flaticon.com/128/25/25657.png", alt:"github", link:"http://github.com/AmanVerma-97", name:"Github"},
     {src:"https://cdn-icons-png.flaticon.com/128/3536/3536505.png", alt:"linkedin", link:"http://linkedin.com/in/amanv97", name:"LinkedIn"},
     {src:"https://cdn-icons-png.flaticon.com/128/5968/5968830.png", alt:"twitter", link:"https://twitter.com/AmanVerma_97", name:"Twitter"},
-    {src:"https://cdn-icons-png.flaticon.com/128/5968/5968534.png", alt:"gmail", link:"#gmail", name:"Gmail"},
+    {src:"https://cdn-icons-png.flaticon.com/128/5968/5968534.png", alt:"gmail", link:"mailto:amanv191097@gmail.com", name:"Gmail"},
 ]
 
 function Socials() {
@@ -13,6 +13,13 @@ function Socials() {
 
   const handleMouseOver = (index) => setHoveredIndex(index);
   const handleMouseOut = () => setHoveredIndex(null);
+
+  const handleClick=(name)=>{
+    if(name==="Gmail"){
+        window.location.href = "mailto:amanv191097@gmail.com";
+        // window.open("mailto:amanv191097@gmail.com")
+    }
+  }
 
   return (
     <div className='flex flex-row gap-6 justify-evenly items-center w-full'>
@@ -24,7 +31,7 @@ function Socials() {
 
                             <img src={social.src} alt={social.alt} 
                             className=' h-10 w-10 lg:h-12 lg:w-12  hover:shadow-lg hover:shadow-blue-800/75 hover:rounded-full'
-                            onMouseOver={() => handleMouseOver(index)} onMouseOut={handleMouseOut}
+                            onMouseOver={() => handleMouseOver(index)} onMouseOut={handleMouseOut} onClick={()=>handleClick(social.name)}
                             />
 
                             <div className={`${hoveredIndex===index ? 'opacity-100': 'opacity-0'} lg:text-base text-xs`}>{social.name}</div>
