@@ -21,7 +21,7 @@ const Contact = () => {
     formData.append("access_key", my_key);
 
     const object = Object.fromEntries(formData);
-    console.log("Objext is--", object);
+    
 
     const json = JSON.stringify(object);
 
@@ -35,7 +35,6 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
       
       inputs.forEach((input) => {
         input.value = '';

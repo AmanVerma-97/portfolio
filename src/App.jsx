@@ -6,7 +6,10 @@ function App() {
   
   return (
     <>
-      <RouterProvider router={routes} />
+    <div className=" container">
+    <RouterProvider router={routes} />
+    </div>
+      
     </>
   )
 }
