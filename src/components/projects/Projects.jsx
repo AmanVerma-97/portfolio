@@ -11,6 +11,7 @@ const projects=[
 function Projects() {
   return (
     <>
+    <h2>Hover pe tech stack dikha</h2>
       <div className=' w-10/12 md:w-11/12 lg:w-10/12 m-auto grid grid-cols-2 md:grid-cols-3 place-content-center place-items-center gap-4 mt-2 md:mt-8 p-2'>
 
           {

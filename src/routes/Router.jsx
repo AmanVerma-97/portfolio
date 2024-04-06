@@ -8,6 +8,7 @@ import Contact from "../components/contact/Contact";
 import Education from "../components/education/Education";
 import Internships from "../components/internships/Internships";
 import Error from "../components/error/Error";
+import Skills from "../components/skills/Skills"
 
 const routes = createBrowserRouter([
     {
@@ -39,6 +40,11 @@ const routes = createBrowserRouter([
         {
           path: "/contact",
           element: <Contact />, // Renders the Contact component
+        },
+
+        {
+          path: "/skills",
+          element: <Skills />, // Renders the Contact component
         },
       ],
 

@@ -8,6 +8,7 @@ const Links= [
     {url:"/internships", title:"Internships"},
     {url:"/projects", title:"Projects"},
     {url:"/contact", title:"Contact"},
+    {url:"/skills", title:"Skills"},
 ]
 
 function Navbar() {
@@ -26,7 +27,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className="w-screen bg-black text-white min-h-20 py-4 px-8 flex justify-between items-center sticky z-50">
+    <nav className="w-screen bg-black text-white min-h-20 py-4 px-6 md:px-4 lg:px-8 flex justify-between items-center sticky z-50">
         {/* Resume Download Button */}
         <div className=""> 
             <button className="text-lg border-2 border-yellow-700 bg-orange-300 text-black p-2 rounded-md hover:bg-yellow-400" onClick={downloadResume}>My Resume</button>
@@ -35,7 +36,7 @@ function Navbar() {
         {/* Landing Pages */}
         <div className="hidden md:inline-block menu-list"> 
             <ul className="flex flex-col flex-wrap gap-5 absolute right-0 top-20 bg-black px-8 py-2 transition duration-500 
-                            md:flex-row md:gap-8 md:relative md:top-0 lg:gap-12">
+                            md:flex-row md:gap-6 md:relative md:top-0 lg:gap-10">
 
                 { Links.map((link,index)=>(
                     <li key={index} className="hover:text-red-300 md:hover:text-orange-300 cursor-pointer font-medium lg:text-2xl md:text-lg transition duration-500 "> 

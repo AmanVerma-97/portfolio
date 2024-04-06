@@ -6,9 +6,9 @@ function App() {
   
   return (
     <>
-    <div className=" container">
+    
     <RouterProvider router={routes} />
-    </div>
+   
       
     </>
   )

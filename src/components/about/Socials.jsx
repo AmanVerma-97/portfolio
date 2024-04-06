@@ -4,7 +4,7 @@ const socials=[
     {src:"https://cdn-icons-png.flaticon.com/128/25/25657.png", alt:"github", link:"http://github.com/AmanVerma-97", name:"Github"},
     {src:"https://cdn-icons-png.flaticon.com/128/3536/3536505.png", alt:"linkedin", link:"http://linkedin.com/in/amanv97", name:"LinkedIn"},
     {src:"https://cdn-icons-png.flaticon.com/128/5968/5968830.png", alt:"twitter", link:"https://twitter.com/AmanVerma_97", name:"Twitter"},
-    {src:"https://cdn-icons-png.flaticon.com/128/5968/5968534.png", alt:"gmail", link:"mailto:amanv191097@gmail.com", name:"Gmail"},
+    {src:"https://img.icons8.com/?size=80&id=9L16NypUzu38&format=png", alt:"leetcode", link:"https://leetcode.com/aman_verma_19/", name:"LeetCode"},
 ]
 
 function Socials() {
@@ -34,7 +34,7 @@ function Socials() {
                             onMouseOver={() => handleMouseOver(index)} onMouseOut={handleMouseOut} onClick={()=>handleClick(social.name)}
                             />
 
-                            <div className={`${hoveredIndex===index ? 'opacity-100': 'opacity-0'} lg:text-base text-xs`}>{social.name}</div>
+                            <div className={`${hoveredIndex===index ? 'opacity-100': 'opacity-0'} lg:text-base text-xs text-[#0B5A8F] font-semibold`}>{social.name}</div>
 
                         </a>
                     </div>

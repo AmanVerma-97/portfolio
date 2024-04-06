@@ -1,0 +1,14 @@
+[
+    { "label":"React.js", "percentage":"70", "years":"1"},
+    { "label":"JavaScript", "percentage":"85", "years":"2"},
+    { "label":"HTML", "percentage":"90", "years":"4"},
+    { "label":"CSS", "percentage":"90", "years":"4"},
+    { "label":"Tailwind", "percentage":"70", "years":"1"},
+    { "label":"SQL", "percentage":"70", "years":"1"},
+    { "label":"MongoDB", "percentage":"70", "years":"1.5"},
+    { "label":"Firebase", "percentage":"60", "years":"1"},
+    { "label":"Java", "percentage":"80", "years":"3"},
+    { "label":"C++", "percentage":"60", "years":"4"},
+    { "label":"Python", "percentage":"50", "years":"1"},
+    { "label":"REST APIs", "percentage":"60", "years":"1"}
+]
