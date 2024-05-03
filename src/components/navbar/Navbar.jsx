@@ -7,8 +7,9 @@ const Links= [
     {url:"/education", title:"Education"},
     {url:"/internships", title:"Internships"},
     {url:"/projects", title:"Projects"},
-    {url:"/contact", title:"Contact"},
     {url:"/skills", title:"Skills"},
+    {url:"/contact", title:"Contact"},
+    
 ]
 
 function Navbar() {

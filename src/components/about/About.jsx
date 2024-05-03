@@ -1,6 +1,7 @@
 import React from 'react';
 import Socials from './Socials';
 import { TypeAnimation } from 'react-type-animation';
+import profile from "../../assets/black-no-bg.png";
 function About() {
   
   return (
@@ -8,8 +9,8 @@ function About() {
       <div className="w-full h-full p-4 flex flex-col gap-4 items-center justify-center
                      lg:flex lg:flex-row lg:justify-between lg:items-center lg:pt-9 xl:pt-20">
 
-          <div id='image' className="w-11/12 h-auto p-2 lg:h-3/6 border-2 border-red-400">
-              <img src=''/>
+          <div id='image' className="w-11/12 h-auto p-2 lg:h-3/6">
+              <img src={profile} className='w-0 h-0 lg:h-[450px] lg:w-[360px] m-auto drop-shadow-xl rounded-full border border-black' alt='Profile pic'/>
           </div>
 
           <div id='about' className="w-11/12 h-auto p-2 lg:3/6 flex flex-col justify-center items-center gap-8 ">

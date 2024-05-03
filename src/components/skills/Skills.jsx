@@ -23,7 +23,7 @@ const Skills = () => {
                     labels: sourceData.map((data) => data.label),
                     datasets:[
                         {
-                            label:"Percentage",
+                            label:"Proficiency",
                             data: sourceData.map((data) => data.percentage),
                             //We can give bg- color to each individual bar as well
                             backgroundColor: "rgb(124, 164, 230)",
@@ -34,7 +34,7 @@ const Skills = () => {
 
                         //For multiple bar graph charts
                         {
-                            label:"Years",
+                            label:"Experience - Years",
                             data: sourceData.map((data)=> data.years),
                             backgroundColor: "rgb(51, 107, 52)",
                             borderColor:"black",
