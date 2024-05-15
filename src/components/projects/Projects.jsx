@@ -16,14 +16,14 @@ function Projects() {
                 <a href={project.link} target='blank'>
                   
                   <div className=' flex flex-col items-center'  key={index}>
-                    <div className=' lg:w-52 lg:h-52 md:w-40 md:h-40 h-36 w-36  flex justify-center items-center rounded-xl shadow-md shadow-black'
+                    <div className=' lg:w-52 lg:h-52 md:w-40 md:h-40 h-36 w-36  flex justify-center items-center rounded-xl shadow-md shadow-black origin-center'
                          onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
                       {hoverIndex===index ? 
-                      <div className='w-full h-full bg-gradient-to-r from-indigo-100 to-blue-100 flex flex-col justify-center items-center rounded-xl'>
-                        <h1 className=' font-bold text-lg text-green-900'>Tech Stack</h1>
-                        <p className=' font-semibold text-sm lg:text-base text-blue-950/90 drop-shadow-lg'> {techStack[index].skill1} </p>
-                        <p className=' font-semibold text-sm lg:text-base text-blue-950/90 drop-shadow-lg'> {techStack[index].skill2} </p>
-                        <p className=' font-semibold text-sm lg:text-base text-blue-950/90 drop-shadow-lg'> {techStack[index].skill3} </p>
+                      <div className='w-full h-full bg-black/90 flex flex-col justify-center items-center rounded-xl'>
+                        <h1 className=' font-bold text-lg text-white drop-shadow-lg'>Tech Stack</h1>
+                        <p className=' font-semibold text-sm lg:text-base text-gray-100 drop-shadow-lg'> {techStack[index].skill1} </p>
+                        <p className=' font-semibold text-sm lg:text-base text-gray-100 drop-shadow-lg'> {techStack[index].skill2} </p>
+                        <p className=' font-semibold text-sm lg:text-base text-gray-100 drop-shadow-lg'> {techStack[index].skill3} </p>
                       </div> 
                       
                       :

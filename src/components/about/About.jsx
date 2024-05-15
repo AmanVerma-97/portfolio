@@ -10,7 +10,7 @@ function About() {
                      lg:flex lg:flex-row lg:justify-between lg:items-center lg:pt-9 xl:pt-20">
 
           <div id='image' className="w-11/12 h-auto p-2 lg:h-3/6">
-              <img src={profile} className='w-0 h-0 lg:h-[450px] lg:w-[360px] m-auto drop-shadow-xl rounded-full border border-black' alt='Profile pic'/>
+              <img src={profile} className='w-0 h-0 lg:h-[450px] lg:w-[360px] m-auto drop-shadow-xl rounded-full' alt='Profile pic'/>
           </div>
 
           <div id='about' className="w-11/12 h-auto p-2 lg:3/6 flex flex-col justify-center items-center gap-8 ">

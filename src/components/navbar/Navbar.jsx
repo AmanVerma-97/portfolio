@@ -31,7 +31,7 @@ function Navbar() {
     <nav className="w-screen bg-black text-white min-h-20 py-4 px-6 md:px-4 lg:px-8 flex justify-between items-center sticky z-50">
         {/* Resume Download Button */}
         <div className=""> 
-            <button className="text-lg border-2 border-gray-500 bg-black text-white p-2 rounded-md hover:bg-gray-950 hover:shadow-sm hover:shadow-white" onClick={downloadResume}>My Resume</button>
+            <button className="text-lg border-2 border-white bg-gray-600 drop-shadow-md text-black p-2 rounded-md hover:bg-gray-950/80 hover:text-white hover:shadow-md hover:shadow-orange-300" onClick={downloadResume}>My Resume</button>
         </div>
 
         {/* Landing Pages */}

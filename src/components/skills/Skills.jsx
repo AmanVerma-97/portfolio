@@ -11,7 +11,7 @@ import sourceData from "../skills/sourceData.json";
 defaults.plugins.title.display=true;
 defaults.plugins.title.color="rgb(161, 81, 6)";
 defaults.plugins.title.align="start";
-defaults.plugins.title.font.size=20;
+defaults.plugins.title.font.size=24;
 
 const Skills = () => {
 
