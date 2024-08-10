@@ -46,3 +46,6 @@ function Projects() {
 }
 
 export default Projects;
+
+// {"name":"Zomato", "link":"", "img":"https://images.pexels.com/photos/687824/pexels-photo-687824.jpeg?auto=compress&cs=tinysrgb&w=600"},
+    
