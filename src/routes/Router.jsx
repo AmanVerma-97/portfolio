@@ -9,6 +9,7 @@ import Education from "../components/education/Education";
 import Internships from "../components/internships/Internships";
 import Error from "../components/error/Error";
 import Skills from "../components/skills/Skills"
+import Certificate from "../components/certificates/Certificate";
 
 const routes = createBrowserRouter([
     {
@@ -45,6 +46,11 @@ const routes = createBrowserRouter([
         {
           path: "/skills",
           element: <Skills />, // Renders the Contact component
+        },
+
+        {
+          path: "/certificates",
+          element: < Certificate/>, // Renders the Certificate component
         },
       ],
 

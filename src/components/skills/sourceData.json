@@ -1,10 +1,16 @@
 [
-    { "label":"React.js", "percentage":"70", "years":"1"},
-    { "label":"JavaScript", "percentage":"85", "years":"2"},
-    { "label":"TypeScript", "percentage":"50", "years":"0.5"},
+    { "label":"React.js", "percentage":"70", "years":"2"},
+    { "label":"JavaScript", "percentage":"85", "years":"2.5"},
+    { "label":"Tailwind", "percentage":"70", "years":"1.5"},
     { "label":"HTML", "percentage":"90", "years":"4"},
     { "label":"CSS", "percentage":"90", "years":"4"},
-    { "label":"Tailwind", "percentage":"70", "years":"1"},
+    { "label":"TypeScript", "percentage":"50", "years":"0.5"},
+    { "label":"Node.js", "percentage":"70", "years":"1"},
+    { "label":"Next.js", "percentage":"60", "years":"1"},
+    
+    { "label":"Git", "percentage":"80", "years":"2"},
+    { "label":"GitHub", "percentage":"80", "years":"2"},
+    
     { "label":"SQL", "percentage":"70", "years":"1"},
     { "label":"MongoDB", "percentage":"70", "years":"1.5"},
     { "label":"Express", "percentage":"70", "years":"1"},

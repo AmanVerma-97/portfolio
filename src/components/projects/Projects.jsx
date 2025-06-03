@@ -16,7 +16,7 @@ function Projects() {
                 <a href={project.link} target='blank'>
                   
                   <div className=' flex flex-col items-center'  key={index}>
-                    <div className=' lg:w-52 lg:h-52 md:w-40 md:h-40 h-36 w-36  flex justify-center items-center rounded-xl shadow-md shadow-black origin-center'
+                    <div className=' lg:w-52 lg:h-52 md:w-40 md:h-40 h-36 w-36  flex justify-center items-center rounded-xl shadow-md shadow-black hover:shadow-lg hover:shadow-orange-400 origin-center'
                          onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
                       {hoverIndex===index ? 
                       <div className='w-full h-full bg-black/90 flex flex-col justify-center items-center rounded-xl'>

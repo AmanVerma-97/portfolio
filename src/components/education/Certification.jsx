@@ -3,7 +3,7 @@ import mern from "../../assets/mern.png";
 import upsc from "../../assets/upsc.png";
 const education=[
     {url:mern, name:"MERN Stack Development", year:"August 2022- March 2024", institute:"Coding Ninjas", remarks:" Became a proficient Fullstack web developer with this thorough course covering concepts like HTML, CSS, JavaScript, ReactJS, MongoDB, Express, NodeJS, Firebase and more.", achievement:"Certificate of Excellence for all courses in MERN Stack Development Course.", medal:"https://cdn-icons-png.flaticon.com/128/14535/14535834.png"},
-    {url:upsc, name:"UPSC preparation", year:"May 2020- September 2023", marks:"87.4%", institute:"StudyIQ IAS", remarks:"Prepared for one of the toughest exams in the country and learned a lot about our history, culture, economy, geography that helped me gain a better and wider perspective about about beautiful nation.", achievement:"", medal:""},
+    {url:upsc, name:"UPSC preparation", year:"May 2020- December 2024", remarks:"Prepared for one of India's most competitive examinations, developing in-depth knowledge of national history, culture, politics, economy, and geography, and enhancing analytical and critical thinking skills.", achievement:"Cleared UPSC Prelims twice.", medal:""},
     
 ]
 

@@ -52,10 +52,10 @@ const Contact = () => {
           {/* Contact */}
           <div className='w-full flex flex-col lg:flex-row gap-0 shadow-lg shadow-slate-500 lg:min-h-96 rounded-lg'>
             
-            <div className='lg:w-2/6 w-full bg-gradient-to-br from-blue-700/80 to-blue-800/80 lg:h-96 h-auto flex flex-col justify-evenly items-start p-6 gap-4 rounded-lg'>
+            <div className='lg:w-2/6 w-full bg-gray-800 lg:h-96 h-auto flex flex-col justify-evenly items-start p-6 gap-4 rounded-lg'>
               <h1 className=' font-bold text-xl lg:text-2xl drop-shadow-lg text-white'>Let's get in touch</h1>
               <h3 className=' font-semibold text-sm lg:text-sm drop-shadow-lg text-white'>
-                I would love to discuss more about my vision and goals. Let's get in touch.
+              Open to meaningful connections and discussions that align with my vision, goals, and professional growth.
               </h3>
               
               <h1 className=' font-semibold text-base drop-shadow-lg text-white'> <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" alt="phone" className=' h-4 w-4 md:h-6 md:w-6 inline'/> Phone <span className=' font-medium drop-shadow-lg text-md'> : 7300378782</span></h1>
@@ -64,7 +64,7 @@ const Contact = () => {
               
             </div>
             
-            <div className='lg:w-4/6 w-full lg:h-96 h-auto bg-white flex flex-col justify-evenly items-center p-3 lg:p-6 gap-2 lg:gap-4 rounded-lg'>
+            <div className='lg:w-4/6 w-full lg:h-96 h-auto bg-white flex flex-col justify-evenly items-center p-[6px] lg:p-6 gap-2 lg:gap-4 rounded-lg '>
               <h1 className=' font-bold text-xl lg:text-2xl drop-shadow-lg text-blue-950'>Send a message</h1>
               
               <form onSubmit={handleSubmit} className='flex flex-col justify-evenly items-center gap-8 w-10/12' id='form'>
@@ -75,7 +75,7 @@ const Contact = () => {
 
                 <textarea name="message" id="textarea" rows={3} className=' md:w-8/12 lg:w-7/12 w-full rounded-md border-b-2 resize-none focus:outline-none focus:border-2 focus:border-blue-900' placeholder='Your Message'></textarea>
 
-                <button className=' text-white bg-gradient-to-br from-blue-700/80 to-blue-800/80 px-3 py-2 rounded-lg hover:text-black' type="submit"> Send </button>
+                <button className=' text-white bg-gradient-to-br from-blue-900 to-blue-800 px-3 py-2 rounded-lg' type="submit"> Send </button>
               </form>
             
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Socials from './Socials';
 import { TypeAnimation } from 'react-type-animation';
 import profile from "../../assets/black-no-bg.png";
+import profile2 from "../../assets/bg.jpeg";
 function About() {
   
   return (
@@ -10,7 +11,7 @@ function About() {
                      lg:flex lg:flex-row lg:justify-between lg:items-center lg:pt-9 xl:pt-20">
 
           <div id='image' className="w-11/12 h-auto p-2 lg:h-3/6">
-              <img src={profile} className='w-0 h-0 lg:h-[450px] lg:w-[360px] m-auto drop-shadow-xl rounded-full' alt='Profile pic'/>
+              <img src={profile2} className='w-0 h-0 lg:h-[450px] lg:w-[460px] m-auto drop-shadow-xl rounded-full' alt='Profile pic'/>
           </div>
 
           <div id='about' className="w-11/12 h-auto p-2 lg:3/6 flex flex-col justify-center items-center gap-8 ">
@@ -43,10 +44,8 @@ function About() {
                   
                 </div>
                 <div>
-                  <p className=' font-semibold text-md md:text-xl text-gray-900/75 block'>Eager and motivated full stack developer with a passion for building and delivering high-quality
-                    web applications. Proven ability to work independently and as part of a team, and to learn new
-                    technologies quickly.</p> 
-                  <p className=' font-semibold text-md md:text-xl text-gray-900/75 block'>I am very optimistic and enthusiastic person who likes take on new challenges and try to give the optimum performance both as an individual and with a team. </p>
+                  <p className=' font-semibold text-md md:text-xl text-gray-900/75 block'>Motivated Full Stack Developer with a passion for creating efficient, user-friendly web applications. Quick to learn new tools and technologies, with a strong foundation in both front-end and back-end development.</p> 
+                  <p className=' font-semibold text-md md:text-xl text-gray-900/75 block'>I am a very optimistic and enthusiastic person who likes to take on new challenges and strives to deliver optimal performance both individually and as part of a team. </p>
                 </div>
                 <div className='flex flex-row justify-between items-center gap-6 w-full' id='socials'>
                   <Socials/>

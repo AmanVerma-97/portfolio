@@ -19,7 +19,10 @@ export default {
       backgroundImage: {
         'contact': "url('src/assets/contact.jpg')",
         'error': "url('src/assets/error.jpeg')",
-      }
+      },
+      screens:{
+          'custom-lg': '875px',
+      },
     },
   },
   plugins: [
