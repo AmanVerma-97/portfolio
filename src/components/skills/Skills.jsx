@@ -69,10 +69,10 @@ const Skills = () => {
                     return (
                         <>
                             <div key={index} className="w-auto h-auto" onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
-                            <h1 className="font-bold text-lg text-blue-900">{data.label}</h1>
+                            <h1 className="text-center font-bold text-lg text-blue-900">{data.label}</h1>
                             { hoverIndex===index ?
                             <div className="bg-gray-200 w-20 h-20 rounded-lg border border-black shadow-xl shadow-orange-900 hover:cursor-none">
-                                <div className="bg-orange-300/90 h-[79px] w-full rounded-lg border-r-2 border-black flex flex-col justify-center items-center">
+                                <div className="bg-orange-300/60 h-[79px] w-full rounded-lg border-r-2 border-black flex flex-col justify-center items-center">
                                     <h1 className="text-center text-black font-semibold text-sm">{data.years} Years</h1>
                                     <h1 className="text-center text-black font-semibold text-sm">{data.percentage}%</h1>
                                 </div>
