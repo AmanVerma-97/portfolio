@@ -4,5 +4,7 @@
     {"name":"Netflix UI", "link":"https://191097-netlfix-aman.netlify.app/", "img":"https://images.pexels.com/photos/6142159/pexels-photo-6142159.jpeg?auto=compress&cs=tinysrgb&w=600"},
     {"name":"Todo", "link":"https://todo-ts-one-chi.vercel.app/", "img":"https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&w=600"},
     {"name":"Photo Album", "link":"https://photo-album-umber.vercel.app/", "img":"https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?auto=compress&cs=tinysrgb&w=600"},
-    {"name":"Currency Converter", "link":"https://currency-converter-sage-eight.vercel.app/", "img":"https://images.pexels.com/photos/6534317/pexels-photo-6534317.jpeg?auto=compress&cs=tinysrgb&w=600"}
-  ]
+    {"name":"Currency Converter", "link":"https://currency-converter-sage-eight.vercel.app/", "img":"https://images.pexels.com/photos/6534317/pexels-photo-6534317.jpeg?auto=compress&cs=tinysrgb&w=600"},
+    {"name":"Budget Tracker", "link":"https://budget-tracker-phi-neon.vercel.app/", "img":"https://images.pexels.com/photos/4475524/pexels-photo-4475524.jpeg"}
+]
+

@@ -27,7 +27,7 @@ function Projects() {
                       </div> 
                       
                       :
-                      <img src={project.img} alt={project.name} role='img'  className='w-full h-full bg-contain rounded-xl text-white'/>
+                      <img src={project.img} alt={project.name} role='img'  className='w-full h-full bg-contain rounded-xl text-white border '/>
                       }
                     </div>
                     <h2 className=' text-lg font-bold'>{project.name}</h2>
