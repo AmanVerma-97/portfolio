@@ -18,6 +18,8 @@ import Python_Basic from '../../assets/certificates-images/Python-Basic.png';
 import Python_DS from '../../assets/certificates-images/Python-DS.png';
 import Intro_WebDev from '../../assets/certificates-images/Intro-WebDev.png';
 import GeminiMultimodal from '../../assets/certificates-images/Gemini-Multimodal-RAG.png';
+import Outskill from '../../assets/certificates-images/Outskill.png';
+import upGrad from '../../assets/certificates-images/upGrad.png';
 
 const certificates = [ 
     {name:"Amity University", img:Amity},
@@ -25,6 +27,8 @@ const certificates = [
     {name:"FrontEnd", img:FrontEnd},
     {name:"React", img:ReactCertification},
     {name:"JavaScript", img:JavaScript},
+    {name:"Gen AI Mastermind", img:Outskill},
+    {name:"Gen AI Foundation", img:upGrad},
     {name:"Java DSA", img:JavaDSA},
     {name:"Machine Learning", img:ML},
     {name:"Python", img:Python},

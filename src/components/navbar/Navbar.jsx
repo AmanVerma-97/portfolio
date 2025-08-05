@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Resume from "../../assets/AmanVerma-Fullstack.pdf";
+import Resume from "../../assets/AmanVerma-FullStack.pdf";
 import { NavLink, Outlet } from 'react-router-dom';
 
 const Links= [
