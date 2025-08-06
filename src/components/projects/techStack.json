@@ -5,5 +5,6 @@
     {"skill1":"React.js", "skill2":"Firebase", "skill3":"CSS"},
     {"skill1":"React.js", "skill2":"REST APIs", "skill3":"Tailwind CSS"},
     {"skill1":"JavaScript", "skill2":"CSS 5", "skill3":"Git"},
-    {"skill1":"Gen AI", "skill2":"Prompt Engineering", "skill3":"Blink"}
+    {"skill1":"Gen AI", "skill2":"Prompt Engineering", "skill3":"Blink"},
+    {"skill1":"Gen AI", "skill2":"Prompt Engineering","skill3":"Bolt"}
 ]

@@ -64,7 +64,7 @@ const Skills = () => {
             <p className="ml-8 text-lg md:text-xl text-gray-900">The following are the skills I have acquired over the years. Hover for experience and proficiency in each skill.</p>
             <br />
             
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-4 items-center justify-items-center lg:gap-8 lg:grid-cols-6 w-full h-auto m-auto pb-4 ">
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-4 items-baseline justify-items-center lg:gap-8 lg:grid-cols-6 w-full h-auto m-auto pb-4 ">
                 {sourceData.map((data, index) => {
                     return (
                         <>
