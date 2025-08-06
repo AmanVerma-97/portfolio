@@ -55,7 +55,7 @@ function Certificate() {
     }
   
   return (
-        <div className=' w-full h-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center items-center gap-2 lg:gap-y-8 flex-wrap p-2'>
+        <div className=' w-full h-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center items-center gap-2 lg:gap-y-1 flex-wrap p-2'>
             {
                 certificates.map((certificate, index)=>{
                     return(
@@ -64,7 +64,7 @@ function Certificate() {
                             <div key={index} className=' p-1 flex flex-col justify-center items-center' >
                                 
                                 <>
-                                    <img src={certificate.img} alt={certificate.name} className=' h-20 w-20 lg:h-28 lg:w-28 shadow-lg shadow-blue-950 hover:scale-105 cursor-pointer hover:shadow-orange-300 hover:border hover:border-black rounded-lg' onClick={()=>handleClick(certificate.img)}/>
+                                    <img src={certificate.img} alt={certificate.name} className=' h-20 w-20 lg:h-24 lg:w-24 shadow-lg shadow-blue-950 hover:scale-105 cursor-pointer hover:shadow-orange-300 hover:border hover:border-black rounded-lg' onClick={()=>handleClick(certificate.img)}/>
                                     <h1 className=' font-bold text-blue-950 mt-2 text-center'>{certificate.name}</h1>
                                 </>
                                 
