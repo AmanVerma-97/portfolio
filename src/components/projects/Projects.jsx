@@ -19,7 +19,7 @@ function Projects() {
                     <div className=' lg:w-52 lg:h-52 md:w-44 md:h-44 h-36 w-36  flex justify-center items-center rounded-xl shadow-md shadow-black hover:shadow-lg hover:shadow-orange-400 origin-center'
                          onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
                       {hoverIndex===index ? 
-                      <div className='w-full h-full bg-black/90 flex flex-col justify-center items-center rounded-xl'>
+                      <div className='w-full h-full bg-black flex flex-col justify-center items-center rounded-xl'>
                         <h1 className=' font-bold text-lg text-white drop-shadow-lg mb-1 underline'>Tech Stack</h1>
                         <p className=' font-semibold text-sm lg:text-base text-gray-100 drop-shadow-lg'> {techStack[index].skill1} </p>
                         <p className=' font-semibold text-sm lg:text-base text-gray-100 drop-shadow-lg'> {techStack[index].skill2} </p>
@@ -27,10 +27,13 @@ function Projects() {
                       </div> 
                       
                       :
-                      <img src={project.img} alt={project.name} role='img'  className='w-full h-full bg-contain rounded-xl text-white border'/>
+                      <div className='relative w-full h-full flex flex-col justify-center items-center rounded-xl'>
+                        <img src={project.img} alt={project.name} role='img'  className='w-full h-full bg-contain rounded-xl  border blur-[1px] brightness-50'/>
+                        <h2 className='absolute text-lg font-bold z-10  text-white text-center'>{project.name}</h2>
+                      </div>
                       }
                     </div>
-                    <h2 className=' text-lg font-bold'>{project.name}</h2>
+                    
                   </div>
                 </a>
                 
