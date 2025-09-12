@@ -20,24 +20,31 @@ import Intro_WebDev from '../../assets/certificates-images/Intro-WebDev.png';
 import GeminiMultimodal from '../../assets/certificates-images/Gemini-Multimodal-RAG.png';
 import Outskill from '../../assets/certificates-images/Outskill.png';
 import upGrad from '../../assets/certificates-images/upGrad.png';
+import Hack2skill from '../../assets/certificates-images/Hack2skill-Certificate.png';
 
 const certificates = [ 
     {name:"Amity University", img:Amity},
+
     {name:"BackEnd", img:BackEnd},
     {name:"FrontEnd", img:FrontEnd},
     {name:"React", img:ReactCertification},
     {name:"JavaScript", img:JavaScript},
-    {name:"Gen AI Mastermind", img:Outskill},
+
+    {name:"Gen AI Academy", img:Hack2skill},
     {name:"Gen AI Foundation", img:upGrad},
+    {name:"Gen AI Mastermind", img:Outskill},
+
     {name:"Java DSA", img:JavaDSA},
     {name:"Machine Learning", img:ML},
     {name:"Python", img:Python},
     {name:"Python DS", img:Python_DS},
+
     {name:"VertexAI Intro", img:VertexAI},
     {name:"Imagen", img:Gemini},
     {name:"Streamlit", img:Streamlit},
     {name:"Multimodal RAG", img:GeminiMultimodal},
     {name:"VertexAI & GeminiAPI", img:GeminiAPI},
+    
     {name:"Intro to Web Dev", img:Intro_WebDev},
     {name:"Python Basic", img:Python_Basic},
     {name:"Java Intro", img:JavaIntro},

@@ -61,25 +61,27 @@ const Skills = () => {
                 }}
             /> */}
             
-            <p className="ml-8 text-lg md:text-xl text-gray-900">The following are the skills I have acquired over the years. Hover for experience and proficiency in each skill.</p>
-            <br />
+            {/* <p className="ml-8 text-lg md:text-xl text-gray-900">The following are the skills I have acquired over the years. Hover for experience and proficiency in each skill.</p>
+            <br /> */}
             
                 <div className="grid grid-cols-3 md:grid-cols-4 gap-2 items-baseline justify-items-center lg:gap-3 lg:grid-cols-6 w-full h-auto m-auto ">
                 {sourceData.map((data, index) => {
                     return (
                         <>
-                            <div key={index} className="w-auto h-auto" onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
-                            <h1 className="text-center font-bold text-lg text-blue-900">{data.label}</h1>
+                            <div key={index} className="w-auto h-auto flex flex-col items-center" onMouseOver={()=>sethoverIndex(index)} onMouseOut={()=>sethoverIndex(null)}>
+                            <h1 className="text-center bg-slate-200 font-extrabold px-2 text-lg text-blue-950 mb-1  border border-black rounded-md">{data.label}</h1>
                             { hoverIndex===index ?
+                            //Details about the skill on hover
                             <div className="bg-gray-200 w-20 h-20 rounded-lg border border-black shadow-xl shadow-orange-900 hover:cursor-none">
-                                <div className="bg-orange-300/60 h-[79px] w-full rounded-lg border-r-2 border-black flex flex-col justify-center items-center">
-                                    <h1 className="text-center text-black font-semibold text-sm">{data.years} Years</h1>
-                                    <h1 className="text-center text-black font-semibold text-sm">{data.percentage}%</h1>
+                                <div className="bg-orange-300 h-[79px] w-full rounded-lg flex flex-col justify-center items-center">
+                                    <h1 className="text-center text-black font-bold text-sm">{data.years} Year</h1>
+                                    <h1 className="text-center text-black font-bold text-sm">{data.percentage}%</h1>
                                 </div>
                             </div>
                             :
-                            <div className="bg-gray-200 w-20 h-20 rounded-lg border border-black shadow-lg shadow-black">
-                                <div className="bg-blue-950/75 h-[79px] rounded-lg border-r-2 border-black" style={{ width: `${data.percentage}%` }}></div>
+                            //Skill logo when not hovered
+                            <div className=" w-20 h-20 rounded-lg items-center justify-center">
+                                <div className=" h-[50px] rounded-lg items-center justify-center" style={{ backgroundImage: `url(${data.image})`, backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat:"no-repeat" }}></div>
                             </div>
                             }
                             

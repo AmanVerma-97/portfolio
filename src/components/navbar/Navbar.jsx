@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Resume from "../../assets/AmanVerma-Fullstack.pdf";
+import Resume from "../../assets/Aman Verma Resume.pdf";
 import { NavLink, Outlet } from 'react-router-dom';
 
 const Links= [
@@ -31,8 +31,8 @@ function Navbar() {
     <>
     <nav className="w-screen bg-black text-white min-h-20 py-4 px-6 md:px-4 lg:px-8 flex justify-between items-center sticky z-50">
         {/* Resume Download Button */}
-        <div className="border-2 border-white"> 
-            <button className="text-lg bg-gray-800 drop-shadow-md text-white p-2 rounded-md hover:bg-gray-950/80  hover:shadow-md hover:shadow-orange-300 transition duration-300" onClick={downloadResume}>My Resume</button>
+        <div className="border border-white rounded-md"> 
+            <button className="text-lg bg-gray-950 drop-shadow-md text-white p-2 rounded-md hover:bg-gray-950/80  hover:shadow-md hover:text-orange-300 transition duration-300" onClick={downloadResume}>My Resume</button>
         </div>
 
         {/* Landing Pages */}
