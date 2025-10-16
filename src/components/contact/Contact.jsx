@@ -69,11 +69,11 @@ const Contact = () => {
               
               <form onSubmit={handleSubmit} className='flex flex-col justify-evenly items-center gap-8 w-10/12' id='form'>
                 
-                <input type="text" name="name" placeholder='Your Name' className='inline rounded-md border-b-2 md:w-8/12 lg:w-7/12 w-full focus:outline-none focus:border-2 focus:border-blue-900'/>
+                <input type="text" name="name" placeholder='Your Name' className='inline rounded-md border-b-2 md:w-8/12 lg:w-7/12 w-full focus:outline-none focus:border-2 focus:border-blue-900' required/>
                 
-                <input type="email" name="email" id="" placeholder='Your Email' className=' rounded-md border-b-2 md:w-8/12 lg:w-7/12 w-full focus:outline-none focus:border-2 focus:border-blue-900'/>
+                <input type="email" name="email" id="" placeholder='Your Email' className=' rounded-md border-b-2 md:w-8/12 lg:w-7/12 w-full focus:outline-none focus:border-2 focus:border-blue-900' required/>
 
-                <textarea name="message" id="textarea" rows={3} className=' md:w-8/12 lg:w-7/12 w-full rounded-md border-b-2 resize-none focus:outline-none focus:border-2 focus:border-blue-900' placeholder='Your Message'></textarea>
+                <textarea name="message" id="textarea" rows={3} className=' md:w-8/12 lg:w-7/12 w-full rounded-md border-b-2 resize-none focus:outline-none focus:border-2 focus:border-blue-900' placeholder='Your Message' required></textarea>
 
                 <button className=' text-white bg-gradient-to-br from-blue-900 to-blue-800 px-3 py-2 rounded-lg' type="submit"> Send </button>
               </form>

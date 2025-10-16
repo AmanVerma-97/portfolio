@@ -14,7 +14,7 @@ function MainEducation() {
                 return(
                     <div key={index} className='p-2'>
                         <h2 className=' text-2xl lg:text-3xl font-extrabold text-blue-950 drop-shadow-xl'>{edu.name}
-                        <img src={edu.url} alt={edu.name} className=' h-8 w-8 lg:inline rounded-full lg:ml-4 shadow-lg shadow-blue-950'/></h2>
+                        <img src={edu.url} alt={edu.name} className=' h-8 w-8 lg:inline rounded-full lg:ml-4 shadow-lg shadow-blue-950' loading='lazy'/></h2>
                         <h3 className=' text-xl lg:2xl font-bold text-orange-800 drop-shadow-lg mt-4 lg:mt-0'>{edu.institute}</h3>
                         <h4 className=' text-lg lg:text-xl font-semibold text-gray-700'>{edu.year}</h4>
                         <h4 className=' text-lg lg:text-xl font-semibold text-black'>{edu.marks}</h4>

@@ -22,23 +22,26 @@ function About() {
                 </div>
 
                 <div>
-                  <h2 className=' font-bold sm:text-3xl text-blue-900/75 text-xl'>
+                  <h2 className=' font-bold sm:text-3xl text-blue-900/85 text-xl'>
                   <TypeAnimation
                     sequence={[
                       // Same substring(if any) at the start will only be typed out once, initially
                       'Frontend Developer',
-                      1500, // wait 1.5s before replacing one with other
+                      1200, // wait 1.5s before replacing one with other
                       'Backend Developer',
-                      1500,
+                      1200,
                       'Fullstack Developer',
-                      1500,
+                      1200,
                       'Software Engineer',
-                      1500
+                      1200
                     ]}
                     wrapper="span"
                     speed={50}
-                    style={{display: 'inline-block' }}
+                    deletionSpeed={80}
+                    
+                    style={{display: 'inline-block', transition: "all 1s ease-in-out" }}
                     repeat={Infinity}
+                    
                   />
                   </h2>
                   

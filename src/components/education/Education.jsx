@@ -7,7 +7,7 @@ const Education = () => {
     <>
         <div className=' flex flex-col justify-center items-center gap-6  w-11/12 px-6 py-2 m-auto mt-2'>
           
-          <div id='education' className=' p-2 flex flex-col gap-5 justify-center items-center lg:flex-row lg:gap-8 lg:justify-between lg:items-start w-full lg:w-11/12'>
+          <div id='education' className=' p-2 flex flex-col gap-5 justify-center items-center lg:flex-row lg:gap-8 lg:justify-between lg:items-start w-full'>
 
             
             <div className='  w-full lg:w-3/6 '>

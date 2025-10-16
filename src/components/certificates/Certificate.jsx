@@ -21,6 +21,9 @@ import GeminiMultimodal from '../../assets/certificates-images/Gemini-Multimodal
 import Outskill from '../../assets/certificates-images/Outskill.png';
 import upGrad from '../../assets/certificates-images/upGrad.png';
 import Hack2skill from '../../assets/certificates-images/Hack2skill-Certificate.png';
+import Scrum from '../../assets/certificates-images/Scrum.jpg';
+import OCIFOundation from '../../assets/certificates-images/OCI Foundation.png';
+import OracleGenAI from '../../assets/certificates-images/Oracle-GenAI.png';
 
 const certificates = [ 
     {name:"Amity University", img:Amity},
@@ -33,11 +36,14 @@ const certificates = [
     {name:"Gen AI Academy", img:Hack2skill},
     {name:"Gen AI Foundation", img:upGrad},
     {name:"Gen AI Mastermind", img:Outskill},
+    {name:"Oracle GenAI", img:OracleGenAI},
 
     {name:"Java DSA", img:JavaDSA},
     {name:"Machine Learning", img:ML},
     {name:"Python", img:Python},
     {name:"Python DS", img:Python_DS},
+    {name:"OCI Foundation", img:OCIFOundation},
+    {name:"Scrum", img:Scrum},
 
     {name:"VertexAI Intro", img:VertexAI},
     {name:"Imagen", img:Gemini},
@@ -71,7 +77,7 @@ function Certificate() {
                             <div key={index} className=' p-1 flex flex-col justify-center items-center' >
                                 
                                 <>
-                                    <img src={certificate.img} alt={certificate.name} className=' h-20 w-20 lg:h-24 lg:w-24 shadow-lg shadow-blue-950 hover:scale-105 cursor-pointer hover:shadow-orange-300 hover:border hover:border-black rounded-lg' onClick={()=>handleClick(certificate.img)}/>
+                                    <img src={certificate.img} alt={certificate.name} className=' h-20 w-20 lg:h-24 lg:w-24 shadow-lg shadow-blue-950 hover:scale-105 cursor-pointer hover:shadow-orange-300 hover:border hover:border-black rounded-lg' loading='lazy' onClick={()=>handleClick(certificate.img)}/>
                                     <h1 className=' font-bold text-blue-950 mt-2 text-center'>{certificate.name}</h1>
                                 </>
                                 
